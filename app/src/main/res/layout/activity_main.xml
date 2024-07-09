@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -8,41 +8,12 @@
     tools:context=".MainActivity"
     android:padding="100dp">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/greeting_txt"
-        android:textSize="20sp"
-        android:paddingTop="@dimen/top_padding"
-        android:textStyle="bold"
-        android:textColor="#615639"
-        android:id="@+id/editTxt"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="50dp"/>
-
-
-    <Button
-        android:id="@+id/btnWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTxt"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30sp"
-        android:text="Hello"
-        />
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnWelcome"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/txt"
-        android:textColor="#615639"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/clickMe"
+       android:textStyle="bold"
+       android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
