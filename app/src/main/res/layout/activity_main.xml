@@ -5,29 +5,43 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="100dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        android:textSize="30sp"
+        android:hint="Enter your name"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#615639"
-        android:id="@+id/txtWelcome"
+        android:id="@+id/editTxt"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"/>
 
 
     <Button
-        android:id="@+id/btn_welcome"
+        android:id="@+id/btnWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtWelcome"
+        android:layout_below="@+id/editTxt"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="30sp"
         android:text="Hello"
-        android:onClick="OnHelloBtnClicked"/>
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnWelcome"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt"
+        android:textColor="#615639"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
 
 </RelativeLayout>
