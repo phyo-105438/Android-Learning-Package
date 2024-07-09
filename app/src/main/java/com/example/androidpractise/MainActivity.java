@@ -17,12 +17,21 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
+        btn = findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Hello Android Developer",Toast.LENGTH_LONG).show();
+            }
+        });
     }
+//    public void showToast(View v){
+//        Toast.makeText(MainActivity.this,"Hello Android",Toast.LENGTH_LONG).show();
+//    }
 }
