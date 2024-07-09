@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Android"
+        android:text="Hello"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#615639"
@@ -20,12 +20,14 @@
 
 
     <Button
+        android:id="@+id/btn_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtWelcome"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20sp"
-        android:text="Hello"/>
+        android:text="Hello"
+        android:onClick="OnHelloBtnClicked"/>
 
 </RelativeLayout>
