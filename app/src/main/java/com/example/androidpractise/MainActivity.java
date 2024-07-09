@@ -17,16 +17,6 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-//    @Override
-//    public void onClick(View v) {
-//        switch(v.getId()){
-//            case R.id.btnWelcome :
-//                Toast.makeText(this,"Hello Button Clicked",Toast.LENGTH_LONG).show();
-//                break;
-//            default:
-//                break;
-//        }
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
