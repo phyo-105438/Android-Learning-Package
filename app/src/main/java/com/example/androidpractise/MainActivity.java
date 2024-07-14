@@ -3,17 +3,9 @@ package com.example.androidpractise;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,14 +16,21 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Hello Android Developer",Toast.LENGTH_LONG).show();
-            }
-        });
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this,"Hello Android Developer",Toast.LENGTH_LONG).show();
+//            }
+//        });
+
+        btn.setOnClickListener(new Walifer());
     }
-//    public void showToast(View v){
-//        Toast.makeText(MainActivity.this,"Hello Android",Toast.LENGTH_LONG).show();
-//    }
+    public class Walifer implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this,"Hello Android Developer",Toast.LENGTH_LONG).show();
+        }
+    }
+
 }
