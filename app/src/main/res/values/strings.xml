@@ -2,4 +2,5 @@
     <string name="app_name">Android Practise</string>
     <string name="greeting_txt">Hello Ezekiel</string>
     <string name="clickMe">Click Me</string>
+    <string name="clickMe_1">Click Me</string>
 </resources>
