@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sastified_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sastified_emoji"/>
+
+    <ImageView
+        android:id="@+id/angry_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:src="@drawable/angry_emoji"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/sastified_emoji"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt"
+        android:layout_alignTop="@id/txt"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="People like this !"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:paddingHorizontal="30dp"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/unlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlike"
+            android:layout_marginLeft="30dp"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

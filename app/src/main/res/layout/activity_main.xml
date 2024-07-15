@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/kotlin_Icon"
+    android:background="@drawable/kotlin_icon"
     tools:context=".MainActivity">
 
    <RelativeLayout
@@ -44,6 +44,13 @@
           android:layout_alignParentRight="true"
           android:layout_alignParentBottom="true"
           android:text="Click Me"/>
+
+      <ImageView
+          android:id="@+id/img_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/kotlin_icon"
+          android:layout_above="@id/btn"/>
 
 
 
