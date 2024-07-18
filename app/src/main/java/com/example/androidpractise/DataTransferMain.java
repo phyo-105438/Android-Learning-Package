@@ -17,6 +17,7 @@ public class DataTransferMain extends AppCompatActivity {
     public Button btn_1, btn_2;
     public TextView play , result;
     public MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,28 +36,40 @@ public class DataTransferMain extends AppCompatActivity {
     }
 
     public void clickBtn(){
-        String value = editText.getText().toString();
+
         play.setOnClickListener(v -> {
             mediaPlayer.start();
         });
 
         btn_1.setOnClickListener(v -> {
+            String value = editText.getText().toString();
             //Parsing value to another activity
             Intent i = new Intent(DataTransferMain.this,GetData.class);
             Bundle bundle = new Bundle();
-            bundle.putString("Ezzie",value);
+            bundle.putString("Android",value);
             i.putExtras(bundle);
             startActivity(i);
         });
 
         btn_2.setOnClickListener(v -> {
-
+            String value = editText.getText().toString();
+            Intent intent = new Intent(DataTransferMain.this, GetData.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Android",value);
+            intent.putExtras(bundle);
+            startActivityForResult(intent,0);
         });
     }
+
 
     @Override
     protected void onPause() {
         super.onPause();
         mediaPlayer.pause();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

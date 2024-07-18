@@ -20,7 +20,7 @@
         android:layout_marginTop="30dp">
 
         <RadioButton
-
+            android:id="@+id/java"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Java"
@@ -28,7 +28,7 @@
             android:layout_marginLeft="20dp"/>
 
         <RadioButton
-
+            android:id="@+id/kotlin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kotlin"
@@ -36,7 +36,7 @@
             android:layout_marginLeft="20dp"/>
 
         <RadioButton
-
+            android:id="@+id/dart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dart"
@@ -49,7 +49,7 @@
         android:id="@id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/radioGP"
+        android:layout_below="@id/selected"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:text="Submit"
@@ -62,7 +62,7 @@
         android:layout_below="@id/radioGP"
         android:text=" Selected Language is "
         android:textSize="24dp"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="50dp"/>
 
     <TextView
         android:id="@id/txt"
