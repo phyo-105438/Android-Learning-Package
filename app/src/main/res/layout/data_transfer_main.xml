@@ -4,9 +4,43 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@id/mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mainTitle"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTitle"
+        android:hint="Enter Music Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxt"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:text="Search"
+        android:onClick="search"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxt"
+        android:layout_toRightOf="@id/btn_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="Search For Research"
+        android:onClick="search"/>
+
 
 </RelativeLayout>
