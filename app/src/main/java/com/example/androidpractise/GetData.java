@@ -10,13 +10,22 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GetData extends AppCompatActivity {
     public RadioGroup radioGroup;
     public Button submit;
-    public TextView txt;
+    public TextView txt, title;
+
+    public Bundle bundle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.get_data);
         init();
+        bundle = getIntent().getExtras();
+        if(!(bundle == null)){
+            String value = bundle.getString("Ezzie");
+            if(!(value == null)){
+                title.setText(value);
+            }
+        }
 
 
 
@@ -26,5 +35,7 @@ public class GetData extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGP);
         submit = findViewById(R.id.btn);
         txt = findViewById(R.id.txt);
+        title = findViewById(R.id.title);
+
     }
 }

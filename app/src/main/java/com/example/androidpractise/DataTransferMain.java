@@ -1,7 +1,9 @@
 package com.example.androidpractise;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,7 @@ public class DataTransferMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.data_transfer_main);
         init();
+        clickBtn();
     }
 
     public void init(){
@@ -32,16 +35,28 @@ public class DataTransferMain extends AppCompatActivity {
     }
 
     public void clickBtn(){
+        String value = editText.getText().toString();
         play.setOnClickListener(v -> {
             mediaPlayer.start();
         });
 
         btn_1.setOnClickListener(v -> {
-
+            //Parsing value to another activity
+            Intent i = new Intent(DataTransferMain.this,GetData.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Ezzie",value);
+            i.putExtras(bundle);
+            startActivity(i);
         });
 
         btn_2.setOnClickListener(v -> {
 
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mediaPlayer.pause();
     }
 }
