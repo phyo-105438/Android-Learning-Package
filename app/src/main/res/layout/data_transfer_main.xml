@@ -19,7 +19,7 @@
         android:layout_below="@+id/mainTitle"
         android:hint="Enter Music Name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
         android:textSize="20dp"/>
 
     <Button
@@ -28,19 +28,30 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTxt"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
-        android:text="Search"
-        android:onClick="search"/>
+        android:layout_marginTop="50dp"
+        android:text="Start"
+        android:onClick="Start"/>
 
     <Button
+        android:id="@id/btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTxt"
         android:layout_toRightOf="@id/btn_1"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
-        android:text="Search For Research"
-        android:onClick="search"/>
+        android:text="Start For Research"
+        android:onClick="StartForResearch"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/btn_1"
+        android:textSize="20dp"
+        android:text="Result"/>
 
 
 </RelativeLayout>
