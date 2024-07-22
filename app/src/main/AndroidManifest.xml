@@ -20,36 +20,42 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-<!--    Like And Unlike Activity-->
-
+        </activity> <!-- Like And Unlike Activity -->
         <activity
             android:name=".LikeAndUnlikeActivity"
             android:exported="true">
-        </activity>
-<!--    Activity One    -->
 
+        </activity>
+        <!-- Activity One -->
         <activity
             android:name=".ActivityOne"
             android:exported="true">
+
         </activity>
-
-<!--Activity Two        -->
-
+        <!-- Activity Two -->
         <activity
             android:name=".ActivityTwo"
             android:exported="true">
-        </activity>
 
-<!--        DateTranseferActivity-->
-        <activity android:name=".DataTransferMain"
+        </activity>
+        <!-- DateTranseferActivity -->
+        <activity
+            android:name=".DataTransferMain"
             android:exported="true">
-        </activity>
 
-        <activity android:name=".GetData"
+        </activity>
+<!--        Get Data-->
+        <activity
+            android:name=".GetData"
             android:exported="true">
-        </activity>
 
+        </activity>
+<!--        Life Cycle-->
+        <activity
+            android:name=".LifeCycle"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

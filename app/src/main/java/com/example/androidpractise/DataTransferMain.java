@@ -71,5 +71,10 @@ public class DataTransferMain extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK){
+            Bundle bundle = data.getExtras();
+            String value = bundle.getString("Android").toString();
+            result.setText(value);
+        }
     }
 }
