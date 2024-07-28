@@ -31,16 +31,34 @@ public class LifeCycle extends AppCompatActivity {
 
     }
 
+    @Override
     protected void onStart() {
-
         super.onStart();
-        btnClicked("On Start");
+        Toast.makeText(this,"On Start is stariting",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        btnClicked("On Resume");
+        Toast.makeText(this,"On Resume is stariting",Toast.LENGTH_SHORT).show();
+    }
+
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Toast.makeText(LifeCycle.this,"On Pause is starting",Toast.LENGTH_SHORT).show();
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Toast.makeText(LifeCycle.this,"On Stop is starting",Toast.LENGTH_SHORT).show();
+//    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(LifeCycle.this,"On Destroy is starting",Toast.LENGTH_SHORT).show();
     }
 
     public void btnClicked(String text) {

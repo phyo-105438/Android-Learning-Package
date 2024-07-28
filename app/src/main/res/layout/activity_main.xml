@@ -47,10 +47,11 @@
 
       <ImageView
           android:id="@+id/img_view"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:src="@drawable/kotlin_icon"
-          android:layout_above="@id/btn"/>
+          android:layout_width="254dp"
+          android:layout_height="199dp"
+          android:layout_above="@id/btn"
+          android:layout_marginBottom="143dp"
+          android:src="@drawable/kotlin_icon" />
 
 
 
