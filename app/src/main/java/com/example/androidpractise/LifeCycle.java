@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -43,17 +44,29 @@ public class LifeCycle extends AppCompatActivity {
         Toast.makeText(this,"On Resume is stariting",Toast.LENGTH_SHORT).show();
     }
 
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        Toast.makeText(LifeCycle.this,"On Pause is starting",Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        Toast.makeText(LifeCycle.this,"On Stop is starting",Toast.LENGTH_SHORT).show();
-//    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Toast.makeText(this, "On Save Instance State", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Toast.makeText(this, "On Restore Instance State", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(LifeCycle.this,"On Pause is starting",Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(LifeCycle.this,"On Stop is starting",Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     protected void onDestroy() {
