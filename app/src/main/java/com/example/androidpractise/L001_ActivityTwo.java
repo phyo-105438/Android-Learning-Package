@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ActivityTwo extends AppCompatActivity {
+public class L001_ActivityTwo extends AppCompatActivity {
     Button finish;
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class ActivityTwo extends AppCompatActivity {
     }
     public void clickBtn(){
         finish.setOnClickListener(v -> {
-            Intent i = new Intent(ActivityTwo.this, ActivityOne.class);
+            Intent i = new Intent(L001_ActivityTwo.this, L001_ActivityOne.class);
             startActivity(i);
         });
     }

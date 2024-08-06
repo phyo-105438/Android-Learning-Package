@@ -37,7 +37,13 @@ public class LifeCycle extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Toast.makeText(this, String.valueOf(newConfig.orientation), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, String.valueOf(newConfig.orientation), Toast.LENGTH_SHORT).show();
+        if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            Toast.makeText(this, "Portrait", Toast.LENGTH_SHORT).show();
+        }
+        else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            Toast.makeText(this, "Landscape", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

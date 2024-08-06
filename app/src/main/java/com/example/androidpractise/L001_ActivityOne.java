@@ -8,12 +8,12 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ActivityOne extends AppCompatActivity {
+public class L001_ActivityOne extends AppCompatActivity {
     Button btn;
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        setContentView(R.layout.activity_one);
+        setContentView(R.layout.l001_activity_one);
         btn = findViewById(R.id.btn);
         clickBtn();
     }
@@ -22,7 +22,7 @@ public class ActivityOne extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ActivityOne.this, ActivityTwo.class);
+                Intent i = new Intent(L001_ActivityOne.this, L001_ActivityTwo.class);
                 startActivity(i);
             }
         });
