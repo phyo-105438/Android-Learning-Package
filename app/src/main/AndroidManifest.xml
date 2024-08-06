@@ -26,22 +26,35 @@
         </activity> <!-- Like And Unlike Activity -->
         <activity
             android:name=".LikeAndUnlikeActivity"
-            android:exported="true"></activity> <!-- Activity One -->
+            android:exported="true">
+
+        </activity> <!-- Activity One -->
         <activity
             android:name=".ActivityOne"
-            android:exported="true"></activity> <!-- Activity Two -->
+            android:exported="true">
+
+        </activity> <!-- Activity Two -->
         <activity
             android:name=".ActivityTwo"
-            android:exported="true"></activity> <!-- DateTranseferActivity -->
+            android:exported="true">
+
+        </activity> <!-- DateTranseferActivity -->
         <activity
             android:name=".DataTransferMain"
-            android:exported="true"></activity> <!-- Get Data -->
+            android:exported="true">
+
+        </activity> <!-- Get Data -->
         <activity
             android:name=".GetData"
-            android:exported="true"></activity> <!-- Life Cycle -->
+            android:exported="true">
+
+        </activity> <!-- Life Cycle -->
         <activity
             android:name=".LifeCycle"
-            android:exported="true"></activity>
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

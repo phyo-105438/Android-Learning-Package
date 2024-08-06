@@ -1,5 +1,6 @@
 package com.example.androidpractise;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.renderscript.ScriptGroup;
 import android.view.Gravity;
@@ -30,6 +31,13 @@ public class LifeCycle extends AppCompatActivity {
         setContentView(binding.getRoot());
         btnClicked("On Create");
 
+    }
+
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Toast.makeText(this, String.valueOf(newConfig.orientation), Toast.LENGTH_SHORT).show();
     }
 
     @Override
